@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/280e7d73a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Courses</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Samy Harras</span>, a student at McGill<br> Welcome to my personal website</h1>
+            <p>Major: Computer Engineering <br>Minor: Applied AI<br>University: McGill University<br>Expected Graduation Year: 2026</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- -------------About------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>As an enthusiastic Computer Engineering student, I am deeply invested in enriching my expertise through
+                    practical experiences and developmental projects. My current proficiency encompasses a range of programming
+                    languages such as Python, Java, C, and VHDL, and I am committed to broadening this repertoire to keep pace
+                    with technological advancements. Known for my organizational skills and ability to work harmoniously in team settings,
+                    I leverage my trilingual communication to foster effective collaboration. My analytical prowess is evidenced by my ability
+                    to deconstruct complex engineering challenges and contribute innovative solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software</span><br>Python,Java,C,Unix.</li>
+                        <li><span>Hardware</span><br>Electric circuits analysis/design, Digital logic.</li>
+                        <li><span>Languages</span><br>English(fluent),French(fluent),Arabic(Native).</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Computer Science Club</span><br>Founded and presided for 3 years the first CS club in  high-school (2019-2022)</li>
+                        <li><span>Class Representative</span><br>Voted Class representative for 5 years in a row and tasked with organizing various events (2017-2022)</li>
+                        <li><span>Math & Science Tutor</span><br>Tutored over 100 students for 3 years (2021-Now)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>High School</span><br>Science & Math concentration in high-school.</li>
+                        <li><span>Bachelor</span><br>B.Eng. in Computer Engineering at McGill University.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------Services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Recent Relevant Courses</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Digital Logic</h2>
+                <p><br>After successfully taking this course, I am adept in digital logic, specializing in designing and optimizing combinational and arithmetic circuits.
+                    Proficient in VHDL, I excel in creating advanced digital systems, including flip-flops, registers, and sequential circuits.
+                    My expertise is ideal for roles requiring innovative digital circuit design and implementation.</p>
+                <a href="https://www.mcgill.ca/study/2023-2024/courses/ecse-222">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Model-Based Programming</h2>
+                <p><br>After taking this course this semester,I will specialize in integrating modeling with programming, focusing on abstraction in
+                    software engineering. My expertise will encompass structural, state-based, and object-oriented system modeling, as well as code generation.
+                    I will become adept with natural language constraints in modeling notations, architectural and design patterns, and the use of
+                    integrated development environments. Proficient in programming tools, I will excel in code review processes and continuous integration.</p>
+                <a href="https://www.mcgill.ca/study/2023-2024/courses/ecse-223">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Algorithms And Data Structures</h2>
+                <p><br>During this semester,I will delve into algorithm design and analysis, focusing on graph algorithms, greedy algorithms, data structures,
+                    and dynamic programming. My journey will include mastering the complexities of maximum flows, equipping me with a comprehensive
+                    understanding of advanced algorithmic strategies.</p>
+                <a href="https://www.mcgill.ca/study/2023-2024/courses/comp-251">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------Services------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Recent Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Personal Website</h3>
+                    <p>Currently engaged in developing a personal portfolio website aimed at showcasing my engineering projects, technical skills, and
+                        professional journey. Utilizing a combination of HTML, CSS, and JavaScript to create a responsive and visually appealing user
+                        interface, while incorporating React for dynamic content management. The project is focused on demonstrating my coding proficiency,
+                        design sensibility, and ability to integrate various web technologies for a seamless user experience.</p>
+                    <a href="#header"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Stock Predictor Application</h3>
+                    <p>Currently designing and developing a stock prediction tool using Python and machine learning techniques. Integrating
+                        real-time data from financial markets to forecast stock trends and provide investment insights. Employing data visualization
+                        tools to present predictive analytics.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Matching Card Game</h3>
+                    <p>Developing an engaging and interactive matching card game using Java, demonstrating expertise in object-oriented programming
+                        and software engineering principles. The project involves designing and implementing a user-friendly GUI, integrating game logic,
+                        and ensuring a responsive and intuitive gameplay experience.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------Contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> samy.harras@mail.mcgill.ca</p>
+                <p><i class="fa-solid fa-envelope"></i> harras.samy@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i> 4385288646</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/samy-harras/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="subject" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 Samy Harras (Some images were generated using DALL-E)</p>
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabename){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabename).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById(sidemenu);
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+</body>
+</html>
